@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[normalem]{ulem}
+\setlength{\ULdepth}{0.5ex}
+\usepackage{changepage}
+\usepackage{amsmath}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeEducationHeading}[7]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    \textbf{\small GPA: }{\small#5/10.0} \\
+    \textbf{\small Relevant Courses: }{\small#6} \\
+    \textbf{\small Activities: }{\small#7} \\
+}
+
+\newcommand{\resumeProjectHeading}[7]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \normalsize #1 & \small #2 \\
+    \end{tabular*} \vspace{-3pt} \small 
+    \begin{adjustwidth}{0.15in}{0.1in} 
+        \textbf{Description: }{#3}\\
+    \end{adjustwidth} \vspace{-4pt}
+    \hspace{0.15in}\textbf{Project Type: }{#4}\\
+    \hspace{0.15in}\textbf{Technologies: }{\textit{#5}}\\ \vspace{-3pt}
+    \begin{adjustwidth}{0.15in}{0.1in} 
+        \textbf{Key Contributions: }{#6}\\
+    \end{adjustwidth} \vspace{-9pt}
+    \begin{adjustwidth}{0.15in}{0.1in}  
+        \textbf{GitHub Link: }\href{#7}{\uline{{#7}}}
+    \end{adjustwidth}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\vspace{-7pt} \begin{itemize}[label={\normalsize\textbullet}]}
+\newcommand{\resumeItemListEnd}{\end{itemize} \vspace{1pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Phan Thanh Hai} \\ \vspace{3pt}
+    \small Thu Duc City, HCMC $|$ 0912738824 $|$ \href{mailto:x@x.com}{phanthanhhai2411@gmail.com} \\ \vspace{1pt}
+    \href{https://linkedin.com/in/haiphan24112000}{linkedin.com/in/haiphan24112000} $|$
+    \href{https://github.com/haiphan2000}{github.com/haiphan2000}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\resumeSubHeadingListStart
+  \item Potential graduate student with more than 1 year of hands-on experience in Python, SQL, data visualization tools and working with both technical and nontechnical business stakeholders, seeking a data engineer at \textbf{VNG} to leverage my experience in building robust data pipelines, and enhance effectiveness in the data on-boarding process
+\resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEducationHeading
+      {University of Information Technology}{Thu Duc City, HCMC}
+      {Bachelor of Computer Science}{2018 – 2023}
+      {8.52}
+      {Design and analysis of algorithms (\textbf{9.5}/10.0), Object-oriented Programming (\textbf{9.2}/10.0), Data Structures and Algorithms (\textbf{9.1}/10.0), Databases(\textbf{8.7}/10.0)}
+      {Teacher assistant for Introduction to Programming and Information Literacy class}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills \& Additional}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Conversational Proficiency in English (TOEIC LR: 775); Basic Communication in Korean} \\
+     \textbf{Programming Languages}{: Python} \\
+     \textbf{Database Management}{: Microsoft SQL Server, Data Modeling, ETL, Data Warehousing} \\
+     \textbf{Tools and Software}{: PySpark, Azure Data Factory, Azure Databricks, Azure Synapse, Apache Superset, Apache Druid, Apache Airflow, Power BI, Visual Studio Code, Jupyter Notebooks, PowerPoint, Github} \\
+     \textbf{Soft Skills}{: Problem Solving, Teamwork, Communication, Adaptability, Attention to detail, Work Ethic} \\
+     \textbf{Courses \& Certifications}{: End-To-End Data Engineering Project - LinkedIn Learning, Problem Solving (Intermediate) - HackerRank, SQL (Advanced) - HackerRank, Python (Basic) - HackerRank, English For Career Development - University of Pennsylvania (Coursera)} \\
+}}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Real Estate Prices}}{10/2023 – 11/2023}
+            {The project aimed to create a solution for web scraping, PySpark processing, and real-time analytics, providing dynamic insights into house prices}
+            {Personal project}
+            {Python, PySpark, Apache Airflow, Apache Druid, Apache Superset, Jupyter Notebooks}
+            {\resumeItemListStart
+                \resumeItem{Developed a web scraper for Immo Scout 24, extracting real estate data and transforming it into a structured format for analysis}
+                \resumeItem{Utilized \textbf{PySpark} in \textbf{Jupyter Notebooks} to perform data processing, cleaning, and modeling, resulting in the creation of a predictive Machine Learning (ML) model for house prices}
+                \resumeItem{Orchestrated a scalable data pipeline using \textbf{Apache Airflow}, managing tasks such as web scraping, ETL processes, and machine learning model training for efficient data processing}
+                \resumeItem{Implemented data versioning with \textbf{Delta} tables, and integrated ML model predictions into \textbf{Apache Druid} for real-time analytics}
+            \resumeItemListEnd}
+            {github.com/haiphan2000/real-estate-prices}
+      
+        \resumeProjectHeading
+            {\textbf{Simple End-To-End Azure Data Engineering}}{04/2023 – 05/2023}
+            {Implemented a comprehensive Azure data engineering solution, initiating data ingestion from a local SQL database and concluding with dynamic reporting in Power BI. The project focused on ETL pipeline techniques and served as a practical learning experience for businesses migrating local data to the cloud}
+            {Personal project}
+            {PySpark, Azure Data Factory, Azure Databricks, Azure Synapse, MS SQL Server}
+            {\resumeItemListStart
+                \resumeItem{Implemented secure data transfer using \textbf{Azure Data Factory}, leveraging the installation of self-hosted integration runtime for enhanced control}
+                \resumeItem{Established seamless connections between \textbf{Azure Data Factory} and the local \textbf{MS SQL Server}}
+                \resumeItem{Configured a copy pipeline within \textbf{Azure Data Factory}, transferring tables to \textbf{Azure Data Lake}'s}
+                \resumeItem{Implemented a medallion data lake architecture using \textbf{Azure Databricks} and \textbf{PySpark} for efficient data processing}
+          \resumeItemListEnd}
+          {github.com/haiphan2000/simple-end-to-end-azure-data-engineering}
+    
+        \resumeProjectHeading
+            {\textbf{Global Superstore Sales Analyst}}{11/2022 – 12/2022}
+            {Designed and implemented a dashboard tailored for retailers, offering a comprehensive analysis of product performance. Key features include showcasing yearly, quarterly, and monthly growth rates, which enhancing decision-making through an understanding of product performance trends}
+            {Personal project}
+            {Power BI}
+            {\resumeItemListStart
+                \resumeItem{Built \textbf{Power BI} dashboard using data from global superstore sales data to visualize core business KPIs (total sales, total profit, and total return), saving time of manual reporting work}
+                \resumeItem{Provided valuable insights to businesses about the effectiveness of their sales strategies through charts and visualizations}
+                \resumeItem{Applied time series analysis to generate sales forecasts for the next 6 months}
+            \resumeItemListEnd}
+            {https://github.com/haiphan2000/superstore-sales-dashboard}
+        
+        \resumeProjectHeading
+            {\textbf{A Comprehensive Analysis Of Zara's Supply Chain}}{03/2022 – 05/2022}
+            {The focus of the project was the analysis of Zara's "fast fashion" model, aiming to evaluate both its successes and limitations within the supply chain}
+            {Group project (5 members)}
+            {PowerPoint}
+            {\resumeItemListStart
+                \resumeItem{\textbf{Led} a team of 4 students with \textbf{e-commerce backgrounds} in facilitating the presentation of insightful analysis on Zara clothing company's supply chain to the lecturer, resulting in our team scoring \textbf{25\% higher} than the class average.}
+                \resumeItem{Drafted a report for a broad analysis of Zara's fashion brand, covering aspects such as its vision, mission, sales channels, business model, etc.}
+                \resumeItem{Utilized non-coding visualization tools, specifically \textbf{PowerPoint}, to generate comprehensive analysis chart and graphs pertaining to the supply chain model, pricing strategy, etc.}
+            \resumeItemListEnd}
+            {github.com/haiphan2000/EC214-Introduction-to-Supply-Chain-Management/tree/main/Zara}
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
